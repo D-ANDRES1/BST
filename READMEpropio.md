@@ -1,4 +1,24 @@
 
+
+## Cómo compilar y ejecutar el proyecto
+
+### Opción 1: Maven
+
+Desde la carpeta raíz del proyecto:
+
+```cmd
+mvn clean compile
+
+Luego
+
+```cmd
+mvn exec:java -Dexec.mainClass="umg.edu.progra.arboles.Principal"
+
+### Opcion 2: Eclipse
+
+Importar el proyecto como proyecto Maven.
+Esperar la carga de dependencias.
+Ejecutar la clase: Principal.java
 ---
 
 ## Implementación del árbol
@@ -46,6 +66,16 @@ La clase `ArbolBinarioBusqueda` incluye operaciones completas de manipulación d
 
 - Recorrido por niveles (BFS)  
   Recorre el árbol por niveles utilizando una cola implementada manualmente, sin estructuras de `java.util`.
+
+---
+
+## Extensión del proyecto
+
+Además de la implementación base del Árbol Binario de Búsqueda (BST), se agregaron métodos adicionales con el objetivo de reforzar el uso de recursividad y el análisis de propiedades estructurales del árbol.
+
+Estas implementaciones no forman parte de las operaciones básicas del BST, sino que funcionan como ejercicios complementarios para profundizar en la comprensión de estructuras no lineales.
+
+Todas las extensiones fueron desarrolladas sin el uso de librerías externas (`java.util`), manteniendo una implementación manual de las estructuras necesarias.
 
 ---
 
