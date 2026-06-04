@@ -3,6 +3,8 @@
 
 ## Implementación del árbol
 
+la evidencia esta en /capturas-ejecucion.
+
 La clase `ArbolBinarioBusqueda` incluye operaciones completas de manipulación de un BST:
 
 ### Operaciones básicas
