@@ -323,6 +323,9 @@ public class ArbolBinarioBusqueda {
         return esBalanceadoRecu(raiz);
     }
 
+    
+    
+    
     private boolean esBalanceadoRecu(Nodo nodo) {
         if (nodo == null) return true;
 
@@ -348,11 +351,18 @@ public class ArbolBinarioBusqueda {
 
         if (nodo.dato <= min || nodo.dato >= max) return false;
 
-        return esBSTValidoRecursivo(nodo.izquierdo, min, nodo.dato) &&
-               esBSTValidoRecursivo(nodo.derecho, nodo.dato, max);
+        return esBSTValidoRecursivo(nodo.izquierdo, min, nodo.dato) && esBSTValidoRecursivo(nodo.derecho, nodo.dato, max);
     }
     
     public Nodo lca(int v1, int v2) {
+
+       
+        if (!contiene(v1) || !contiene(v2)) {
+            throw new IllegalArgumentException(
+                "Uno o ambos valores no estan en el arbol  "
+            );
+        }
+
         return lcaRecursivo(raiz, v1, v2);
     }
 
@@ -362,7 +372,10 @@ public class ArbolBinarioBusqueda {
         
         
         if (vi1 < nodo.dato && v2 < nodo.dato)
+        	
             return lcaRecursivo(nodo.izquierdo, vi1, v2);
+        
+        
 
         if (vi1 > nodo.dato && v2 > nodo.dato)
             return lcaRecursivo(nodo.derecho, vi1, v2);
