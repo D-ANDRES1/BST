@@ -1,0 +1,50 @@
+
+# =========================
+# Compilados Java / Build
+# =========================
+target/
+bin/
+out/
+build/
+
+*.class
+
+# =========================
+# Eclipse
+# =========================
+.project
+.classpath
+.settings/
+.metadata/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# IntelliJ / JetBrains (por si acaso)
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Maven / Gradle caches (opcional pero recomendado)
+# =========================
+.mvn/
+.m2/
+.gradle/
