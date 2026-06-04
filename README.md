@@ -7,6 +7,15 @@
 
 ---
 
+# .MD propio
+
+se creo el .md con una explicacion ligera de como funciona bst, y un un poco como funciona los ejercicion nuevos.
+se llama READMEpropio.md
+
+no quise remplazar el README.md de la tarea por si acaso.
+
+---
+
 ## 1. Objetivo
 
 Comprender, completar y extender una implementación **manual** de un Árbol Binario de Búsqueda (BST) en Java, **sin usar `java.util` ni librerías externas**, siguiendo el mismo estilo con el que ya implementamos `queue` y `listas` enlazadas en clase.
